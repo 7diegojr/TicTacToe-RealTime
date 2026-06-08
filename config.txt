@@ -1,0 +1,25 @@
+git config --global user.name 7diegojr
+git config --global user.email dfsntsjunior@gmail.com
+
+-- Criar projeto com template branco typescript
+npx create-expo-app@ tictactoe --template blank-typescript
+
+-- Configuração do Firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC0S8vNLlz3FVX-fh7xO3BQ0jBj0i6Xu-I",
+  authDomain: "tictactoe-realtime-5ae29.firebaseapp.com",
+  databaseURL: "https://tictactoe-realtime-5ae29-default-rtdb.firebaseio.com",
+  projectId: "tictactoe-realtime-5ae29",
+  storageBucket: "tictactoe-realtime-5ae29.firebasestorage.app",
+  messagingSenderId: "421508776502",
+  appId: "1:421508776502:web:c0fa29fccf5d423b454e97"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
